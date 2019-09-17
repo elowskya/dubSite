@@ -8,6 +8,10 @@ body {
     font-family: 'Cinzel', serif;
 }
 
+h1, h2 {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
 header {
     background-image: url("../images/homeLP.PNG");
     background-size: cover;
@@ -26,7 +30,7 @@ nav {
     position: fixed;
     background-color:#721817;
     border: solid 3px goldenrod;
-    padding: 4px;
+    padding: 6px;
     font-weight: 600;
 }
 
