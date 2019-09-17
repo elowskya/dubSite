@@ -184,6 +184,9 @@ nav {
     #navigationLink {
         margin-left: 0;
     }
+    a.icon:hover {
+        border: none;
+    }
   }
 
   @media screen and (min-width: 0px) and (max-width: 600px) {
