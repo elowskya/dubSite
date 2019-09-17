@@ -1,8 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    /* border: 2px solid black; */
-    height: 100vh;
     text-align: center;
     /* font-family: 'Cinzel Decorative', cursive; */
     font-family: 'Cinzel', serif;
@@ -33,7 +31,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
     color: white;
     text-align: justify;
-    line-height: 25px;
 }
 
 h1 {
@@ -52,14 +49,20 @@ header {
     background-image: url("../images/homeLP.PNG");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 95vh;
+    /* height: 95vh; */
+    width:1440px;
+    height: 620px;
     background-position: center center;
 }
 img {
-    width: 60%;
-    height: 37%;
+    /* width: 60%;
+    height: 37%; */
+
+    width: 760px;
+    height: 260px;
     position: center;
-    padding-top: 17%;
+    /* padding-top: 17%; */
+    padding-top: 200px;
 }
 
 nav {
@@ -68,7 +71,7 @@ nav {
     border-bottom: solid 3px goldenrod;
     padding: 6px;
     font-weight: 600;
-    width: 98vw;
+    width: 100vw;
 }
 
 #navigationLink {
@@ -123,10 +126,6 @@ nav {
     padding: 1% 6% 0 6%;
   }
 
-  .privateEvents {
-
-  }
-
   .container {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 0 3% 1% 3%;
@@ -173,7 +172,7 @@ nav {
     .topnav {
         overflow: hidden;
         /* background-color: #333; */
-        width: 97vw;
+        width: 99vw;
       }
       img {
         width: 60%;
@@ -189,11 +188,38 @@ nav {
     }
   }
 
-  @media screen and (min-width: 0px) and (max-width: 600px) {
+  @media screen and (max-width: 1439px) {
+    header {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  /* hide social media nav links on devices smaller that laptop or desktop */
+
+  @media screen and (min-width: 0px) and (max-width: 1024px) {
     #socialMedia { display: none; }  /* hide on small screens */
   }
 
-  /* @media screen and (min-width: 601px) and (max-width: 900px) {
-    #socialMedia { display: none; }  /* hide on small screens */
-  /* }  */
+  /* Edits for Ipad screen 768 by 1024 */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    #navigationLink {
+      margin-left: 4%;
+    }
+
+    nav {
+      padding: 1px;
+    }
   
+
+    /* 1920 x 1080 is the most common HD desktop size, the regular
+     size iPad is a common tablet size and the iPhone 5 is the smallest size you should be designing for. */
+  }
+
+
+  /* main css designed for 1920 X 1080
+  IPad used for tablet size 768 X 1024
+  IPhone 5  (min-width: 320px) and (max-width:414px)*/
+
