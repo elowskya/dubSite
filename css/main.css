@@ -53,6 +53,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     height: 95vh;
+    width: 100%;
     /* width:1440px;
     height: 620px; */
     background-position: center center;

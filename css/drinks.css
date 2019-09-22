@@ -7,15 +7,81 @@
     text-align: center;
     /* font-family: 'Cinzel Decorative', cursive; */
     font-family: 'Cinzel', serif;
-    background-color: #333;
-}
-
-footer {
+    /* background-color: #333; */
     background-color: black;
-    height: 50vh; 
+    width: 100%;
+    /* overflow-x: hidden; */
 }
 
-h1, h2, h3, h4, h5, h6 {
+hr {
+  background-color: goldenrod;
+  height: 1px;
+  border: 0;
+}
+li {
+  text-align: left;
+  font-size: 75%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer h6 {
+  padding: 3%;
+  color: goldenrod;
+  text-align: left;
+}
+
+footer li {
+  color: white;
+}
+/* 
+BASIC STYLES */
+
+* { padding: 0; margin: 0; } li { list-style-type: none; } a { text-decoration: none; }
+
+#shamrock {
+  height: 2%;
+  width: 2%;
+  padding: 3% 1% 0;
+}
+header {
+  margin-bottom: 0;
+}
+
+article {
+  background-color: black;
+  width: 80%;
+  margin: auto;
+  margin-top: 0;
+  padding-bottom: 3%;
+}
+
+img {
+  width: 60%;
+  margin: auto;
+}
+
+d0, d1, d2, d3 {
+  background-color: black;
+  padding: 4%;
+}
+
+.d0 img {
+  background-color: black;
+  padding-top: 10%;
+}
+  
+  footer {
+    font-size: 4vh;
+    width: 100%;
+    background: black;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-rows: 35% 35% 30% 30%; */
+    /* grid-template-rows: 45% 45%; */
+    padding: 1%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
     font-family: 'Cinzel Decorative', cursive;
     font-weight: 800;
     color: white;
@@ -24,56 +90,42 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     color: white;
-    text-align: justify;
+    text-align: left;
 }
 
 h1 {
     font-size: 60px;
-    text-decoration: solid underline darkgreen;
+    text-decoration: solid underline goldenrod;
     background-color: rgba(120, 0, 0, 0.8);
     margin-right: 5%;
     margin-left: 5%;
+    margin-top: 3%;
     padding: 1%;
 }
 
-.drinksH1 {
-    bottom: 0;
-}
-
 h2 {
-    color: darkgreen;
+    color: white;
     padding-top: 3%;
 }
-
-footer h3 {
-    text-align: left;
-}
-
 
 header {
     background-image: url("../images/liquorBottles.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 98vh;
-    /* width:1440px;
-    height: 620px; */
     background-position: center center;
 }
 #logo {
     width: 60%;
     height: 37%;
-
-    /* width: 760px;
-    height: 260px; */
     position: center;
     padding-top: 14%;
-    /* padding-top: 200px; */
 }
 
 nav {
     position: fixed;
     background-color:#721817;
-    border-bottom: solid 3px goldenrod;
+    border-bottom: solid 10px goldenrod;
     /*padding: 6px; */
     font-weight: 550;
     width: 100vw;
@@ -131,9 +183,10 @@ nav {
     padding: 1% 6% 0 6%;
   }
 
-  .drinks {
+  /* .drinks {
       background-color: #333;
-  }
+
+  } */
 
   .aboutContainer {
     display: flex;
@@ -173,7 +226,6 @@ nav {
     }
     .topnav {
         overflow: hidden;
-        /* background-color: #333; */
         width: 99vw;
       }
       #logo {
@@ -227,8 +279,8 @@ nav {
     #logo {
         width: 60%;
         height: 17%;
-        position: center;
-        padding-top: 44%;
+        /* padding-top: 64%; */
+      
     }
 
     .drinksH1 {
@@ -240,11 +292,13 @@ nav {
     }
   }
 
-  @media screen and (max-width: 320px) {
-    body {
-      width: 320px;
-    }
-  }
+    /* Media Queries below for Footer */
+  /* @media screen and (min-width: 960px) { .footer { height: 45vh; } 
+@media screen and (max-width: 960px)
+
+@media screen and (max-width: 768px) {  } */
+
+
 
   
 

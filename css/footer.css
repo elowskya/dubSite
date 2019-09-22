@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid green; */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2%;
+}
+
+footer h5 {
+    /* font-family:  */
+    line-height: 300%;
+}
+
+.footerLogo, .footerLocation, .footerHours, .footerContact {
+    width: 24%;
+    vertical-align: top;
+    display: inline-block;
+    line-height: 150%;
+}
+
+footer img .footerLogo {
+    padding-top: 2%;
+    width: 23%;
+}
+/* Eventually link as external stylesheet?
+<link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css"> */
+
+
+/* Below is for ipad in portrait and landscape */
+@media only screen 
+and (min-device-width : 768px) and (max-device-width : 1024px)  {    
+    .footerLogo, .footerLocation, .footerHours {
+        width: 30%;
+    }
+
+    .footerContact {
+        width: 75%;
+    }
+}
+
+/* Below is for iphone 10 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
+    .footerLogo {
+        width: 100%;
+        display: block;
+    } 
+    
+    .footerLocation {
+        width: 49%;
+        vertical-align: top;
+        display: flexbox;
+        line-height: 150%;
+    }
+
+    .footerContact {
+        width: 100%;
+        display: block;
+        text-align: center;
+        border-top: 2px dashed goldenrod;
+    }
+}
+
+/* Below is for iphone 6,7,8 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+    .footerLogo {
+        width: 70%;
+        display: block;
+    }
+    
+    .footerLocation, .footerHours {
+        width: 33%;
+        vertical-align: top;
+        display: inline-block;
+        line-height: 150%;
+        margin-right: 12%;
+    }
+
+    .footerContact {
+        width: 70%;
+        display: block;
+        text-align: center;
+        border-top: 2px dashed goldenrod;
+    }
+}
+
+/* Below is for iphone 6,7,8 plus */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) { 
+    /* content here */
+}
+
+/* Below is for iphone 5&5S */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+    .footerLogo {
+        width: 85%;
+        display: block;
+    }
+    
+    .footerLocation, .footerHours {
+        width: 80%;
+        /* vertical-align: top; */
+        display: block;
+        line-height: 150%;
+        /* margin-right: 12%; */
+    }
+
+    .footerContact {
+        width: 85%;
+        display: block;
+        text-align: center;
+        border-top: 2px dashed goldenrod;
+    }
+}
