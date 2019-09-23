@@ -11,9 +11,8 @@ footer {
     padding: 2%;
 }
 
-footer h5 {
-    /* font-family:  */
-    line-height: 300%;
+footer div {
+   padding: 2%;
 }
 
 .footerLogo, .footerLocation, .footerHours, .footerContact {
