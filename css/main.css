@@ -1,14 +1,19 @@
-/* main css designed for 1920 X 1080
-  IPad used for tablet size 768 X 1024
-  General Phones IPhone 5  (min-width: 320px) and (max-width:767px)*/
-body {
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* font-family: 'Cinzel Decorative', cursive; */
+  font-family: 'Cinzel', serif;
+  border: 2px solid green;
+}
+/* body {
     margin: 0;
     padding: 0;
     text-align: center;
     /* font-family: 'Cinzel Decorative', cursive; */
-    font-family: 'Cinzel', serif;
+    /* font-family: 'Cinzel', serif;
     background-color: whitesmoke;
-}
+}  */
 
 button {
     background-color: #721817;
@@ -83,7 +88,7 @@ nav {
 }
 
 .topnav {
-    overflow: hidden;
+    /* overflow: hidden; */
     border: 1px solid goldenrod;
     /* background-color: #333; */
     /* width: 98vw; */
@@ -171,8 +176,7 @@ nav {
       text-align: left;
     }
     .topnav {
-        overflow: hidden;
-        /* background-color: #333; */
+        /* overflow: hidden; */
         width: 99vw;
       }
       #logo {
