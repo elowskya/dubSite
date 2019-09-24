@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* font-family: 'Cinzel Decorative', cursive; */
+    font-family: 'Cinzel', serif;
+    /* border: 2px solid green; */
+  }
+  
+  button {
+      background-color: #721817;
+      padding: 3%;
+      border: 2px solid goldenrod;
+      color: white;
+      font-family: 'Cinzel', serif;
+      width: 30%;
+  }
+  
+  button:hover {
+      text-decoration: underline solid goldenrod;
+      color: goldenrod;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Cinzel Decorative', cursive;
+      font-weight: 800;
+      color: white;
+      text-decoration: solid underline white;
+  }
+  
+  p {
+      color: white;
+      text-align: justify;
+  }
+  
+  h1 {
+      font-size: 60px;
+      text-decoration: underline darkgreen;
+      /* background-image: linear-gradient(to right, rgba(120,0,0,0), rgba(120,0,0,1)); */
+      background-color: rgba(120, 0, 0, 0.7)
+  }
+  
+  h2 {
+      color: white;
+      text-decoration: underline darkgreen;
+  }
+  
+  header {
+      background-image: url("../images/homeLP.PNG");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 95vh;
+      width: 100%;
+      background-position: center center;
+  }
+  #logo {
+      width: 60%;
+      height: 37%;
+      padding: 3%;
+      margin-top: 17%;
+      /* background-color: rgba(120, 0, 0, 0.8); */
+      background-color: rgba(33,33,33, 0.8);
+      /* background-color: rgba(0, 0, 0, 0.8); */
+  }
+  
+  nav {
+      position: fixed;
+      background-color:#721817;
+      border-bottom: solid 3px goldenrod;
+      padding: 6px;
+      font-weight: 600;
+      width: 100vw;
+  }
+  
+  #navigationLink {
+      margin-left: 12%;
+  }
+  
+  .topnav {
+      border-bottom: 3px solid goldenrod;
+    }
+  
+    a {
+        margin: 3px;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 12px 12px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      color: goldenrod;
+      text-decoration: underline solid goldenrod;
+      border: 2px solid goldenrod;
+    }
+    
+    .topnav a.active {
+      border: 2px solid goldenrod;
+    }
+    
+    .topnav .icon {
+      display: none;
+    }
+
+/* Below is for ipad in portrait and landscape */
+@media only screen 
+and (min-device-width : 768px) and (max-device-width : 1024px)  {    
+    
+    header {
+        height: 90vh;
+    }
+    #logo {
+        width: 50%;
+        height: 20%;
+        padding: 3%;
+        margin-top: 48%;
+        background-color: rgba(25,25,25, 0.8);
+    }
+    
+    #navigationLink {
+        margin-left: 0%;
+    }
+
+    a:hover {
+        color: goldenrod;
+    }
+}
+
+/* Below is for iphone 10 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
+    header {
+        height: 85vh;
+    }
+    #logo {
+        width: 50%;
+        height: 20%;
+        padding: 3%;
+        margin-top: 80%;
+        background-color: rgba(0,0,0, 0.8);
+    }
+    
+    #navigationLink {
+        margin-left: 0%;
+    }
+    
+    .topnav {
+        border-bottom: 3px solid goldenrod;
+      }
+    
+      a {
+          margin: 0;
+      }
+      
+      .topnav a {
+        padding: 1%;
+        text-decoration: none;
+        font-size: 50%;
+      }
+      
+      .topnav a:hover {
+        color: goldenrod;
+        border: none;
+      }
+
+      a#socialMedia {
+          display: none;
+      }
+}
+
+/* fix logo on iphone X landscape */
+@media only screen and (device-width : 812px) and (device-height : 375px) and (-webkit-device-pixel-ratio : 3) {
+    #logo {
+        margin-top: 15%;
+    }
+
+    a#socialMedia {
+        display: initial;
+    }
+ }
+
+/* Below is for iphone 6,7,8 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+    header {
+        height: 85vh;
+    }
+    #logo {
+        width: 50%;
+        height: 20%;
+        padding: 3%;
+        margin-top: 63%;
+        background-color: rgba(0,0,0, 0.8);
+    }
+    
+    nav {
+        padding: 2%;
+        font-weight: 400;
+    }
+    
+    #navigationLink {
+        margin-left: 3%;
+    }
+    
+    .topnav {
+        border-bottom: 3px solid goldenrod;
+      }
+    
+      a {
+          margin: 1%;
+      }
+      
+      .topnav a {
+        padding: 0;
+        font-size: 50%;
+      }
+      
+      .topnav a:hover {
+        color: goldenrod;
+        text-decoration: underline solid goldenrod;
+        border: none;
+      }
+      
+      .topnav a.active {
+        border: 2px solid goldenrod;
+      }
+
+      a#socialMedia {
+          display: none;
+      }
+}
+
+/* fix logo on iphone 6/7/8 landscape */
+@media only screen and (device-width : 667px) and (device-height : 375px) and (-webkit-device-pixel-ratio : 3) {
+    #logo {
+        margin-top: 15%;
+        
+    }
+
+    a#socialMedia {
+        display: initial;
+    }
+ }
+
+/* Below is for iphone 6,7,8 plus */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) { 
+    /* content here */
+}
+
+/* Below is for iphone 5&5S */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+    /* code here */
+}
