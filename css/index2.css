@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* font-family: 'Cinzel Decorative', cursive; */
+    font-family: 'Cinzel', serif;
+    border: 2px solid green;
+  }
+  /* body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      /* font-family: 'Cinzel Decorative', cursive; */
+      /* font-family: 'Cinzel', serif;
+      background-color: whitesmoke;
+  }  */
+  
+  button {
+      background-color: #721817;
+      padding: 3%;
+      border: 2px solid goldenrod;
+      color: white;
+      font-family: 'Cinzel', serif;
+      width: 30%;
+  }
+  
+  button:hover {
+      text-decoration: underline solid goldenrod;
+      color: goldenrod;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Cinzel Decorative', cursive;
+      font-weight: 800;
+      color: white;
+      text-decoration: solid underline white;
+  }
+  
+  p {
+      color: white;
+      text-align: justify;
+  }
+  
+  h1 {
+      font-size: 60px;
+      text-decoration: underline darkgreen;
+      /* background-image: linear-gradient(to right, rgba(120,0,0,0), rgba(120,0,0,1)); */
+      background-color: rgba(120, 0, 0, 0.7)
+  }
+  
+  h2 {
+      color: white;
+      text-decoration: underline darkgreen;
+  }
