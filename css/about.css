@@ -1,25 +1,32 @@
-/* main css designed for 1920 X 1080
-  IPad used for tablet size 768 X 1024
-  General Phones IPhone 5  (min-width: 320px) and (max-width:767px)*/
-  body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    /* font-family: 'Cinzel Decorative', cursive; */
-    font-family: 'Cinzel', serif;
-    background-color: #333;
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* font-family: 'Cinzel Decorative', cursive; */
+  font-family: 'Cinzel', serif;
+  /* border: 2px solid green; */
 }
 
-footer {
-    background-color: black;
-    height: 50vh; 
+button {
+    background-color: #721817;
+    padding: 2%;
+    margin-top: 1%;
+    border: 2px solid goldenrod;
+    color: white;
+    font-family: 'Cinzel', serif;
+    /* width: 15%; */
+}
+
+button:hover {
+    text-decoration: underline solid goldenrod;
+    color: goldenrod;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Cinzel Decorative', cursive;
     font-weight: 800;
     color: white;
-    
+    text-decoration: solid underline white;
 }
 
 p {
@@ -29,62 +36,47 @@ p {
 
 h1 {
     font-size: 60px;
-    /* text-decoration: solid underline darkgreen; */
-    text-decoration: underline solid goldenrod;
-    background-color: rgba(120, 0, 0, 0.8); 
-    margin-right: 5%;
-    margin-left: 5%;
-    padding: 1%;
-}
-
-.aboutH1 {
-    bottom: 0;
+    text-decoration: underline goldenrod;
+    /* background-image: linear-gradient(to right, rgba(120,0,0,0), rgba(120,0,0,1)); */
+    background-color: rgba(120, 0, 0, 0.7)
 }
 
 h2 {
-    color: goldenrod;
-    padding-top: 3%;
+    color:goldenrod;
+    text-decoration: none;
 }
 
 pre {
-    color: white;
-    background-color: black;
-    padding-top: 2%;
+  color: white;
+  text-align: left;
+  border-bottom: 2px dashed goldenrod;
 }
-
-footer h3 {
-    text-align: left;
-}
-
 
 header {
-    background-image: url("../images/liquorBottles.jpg");
+    background-image: url("../images/ireland.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 98vh;
-    /* width:1440px;
-    height: 620px; */
+    height: 95vh;
+    width: 100%;
     background-position: center center;
 }
 #logo {
     width: 60%;
     height: 37%;
-
-    /* width: 760px;
-    height: 260px; */
-    position: center;
-    padding-top: 14%;
-    /* padding-top: 200px; */
+    padding: 3%;
+    margin-top: 17%;
+    /* background-color: rgba(120, 0, 0, 0.8); */
+    background-color: rgba(33,33,33, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.8); */
 }
 
 nav {
     position: fixed;
     background-color:#721817;
     border-bottom: solid 3px goldenrod;
-    /*padding: 6px; */
-    font-weight: 550;
+    padding: 6px;
+    font-weight: 600;
     width: 100vw;
-    top: 0;
 }
 
 #navigationLink {
@@ -92,10 +84,7 @@ nav {
 }
 
 .topnav {
-    overflow: hidden;
-    border: 1px solid goldenrod;
-    /* background-color: #333; */
-    /* width: 98vw; */
+    border-bottom: 3px solid goldenrod;
   }
 
   a {
@@ -119,8 +108,6 @@ nav {
   }
   
   .topnav a.active {
-    /* background-color: goldenrod; */
-    /* color: white; */
     border: 2px solid goldenrod;
   }
   
@@ -128,130 +115,308 @@ nav {
     display: none;
   }
 
-  .about {
-    max-height: 100vh;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/homeLP.PNG');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 1% 6% 0 6%;
+
+  /* beginning code for about section */
+
+  .about, .privateEvents {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/dublinerBar.JPG');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 1% 6% 0 6%;
+    }
+
+    .about h2 {
+        margin: 2% 0;
+    }
+  
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 0 3% 1% 3%;
+    }
+  
+    .aboutContainer {
+      display: flex;
+  }
+  
+    .aboutText {
+      width: 100%;
+      line-height: 225%;
+      padding: 2% 10%;
+    }
+
+    .aboutHistory {
+      line-height: 150%;
+      margin: 3% 0;
+    }
+
+/* Below is for ipad in portrait and landscape */
+@media only screen 
+and (min-device-width : 768px) and (max-device-width : 1024px)  {    
+  
+  header {
+      height: 90vh;
+  }
+  #logo {
+      width: 50%;
+      height: 20%;
+      padding: 3%;
+      margin-top: 48%;
+      background-color: rgba(25,25,25, 0.8);
+  }
+  
+  #navigationLink {
+      margin-left: 0%;
   }
 
-  .about {
-      background-color: #333;
+  a:hover {
+      color: goldenrod;
   }
-
-  .aboutContainer {
-    display: flex;
 }
 
-  .aboutImage {
+/* /* Below is for Galaxy s5/ */
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+  a#socialMedia {
+      display: none;
+  }
+}
+
+/* Below is for Galaxy s5 landscape */
+@media only screen and (min-device-width : 640px) and (max-device-width : 360px) {
+  /* content here */
+}
+
+/* Below is for iphone 10 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
+  header {
+      height: 85vh;
+  }
+  #logo {
       width: 50%;
-      height: 50%;
-      padding: 0;
-  }
-
-  .aboutText {
-    width: 50%;
-    height: 50%;
-    padding: 2% 2% 0 2%;
+      height: 20%;
+      padding: 3%;
+      margin-top: 80%;
+      background-color: rgba(0,0,0, 0.8);
   }
   
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
+  #navigationLink {
+      margin-left: 0%;
   }
   
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+  .topnav {
+      border-bottom: 3px solid goldenrod;
     }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .topnav {
-        overflow: hidden;
-        /* background-color: #333; */
-        width: 99vw;
-      }
-      #logo {
-        width: 60%;
-        height: 37%;
-        position: center;
-        padding-top: 34%;
-    }
-      #navigationLink {
-        margin-left: 0;
-    }
-    a.icon:hover {
-        border: none;
-        color: goldenrod;
-    }
-  }
-
-  /* hide social media nav links on devices smaller that laptop or desktop */
-
-  @media screen and (min-width: 0px) and (max-width: 1024px) {
-    #socialMedia { display: none; }  /* hide on small screens */
-  }
-
-  /* Edits for Ipad screen 768 by 1024 */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    #navigationLink {
-      margin-left: 2%;
-    }
-
-    nav {
-      padding: 1px;
+  
+    a {
+        margin: 0;
     }
     
-  .topnav a:hover {
-    border: hidden; 
-    color: goldenrod;
-    text-decoration: solid underline goldenrod;
-  }
-
-  .topnav a {
-    margin: 0;
-    padding: 1%;
-  }
-}
-  /* Edits for General phones at this time Iphone 5 and up */
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .topnav a {
+      padding: 1%;
+      text-decoration: none;
+      font-size: 50%;
+    }
+    
     .topnav a:hover {
-      border: 1px solid goldenrod;
       color: goldenrod;
-    }
-    #logo {
-        width: 60%;
-        height: 17%;
-        position: center;
-        padding-top: 44%;
+      border: none;
     }
 
-    .aboutH1 {
-        padding-top: 4%;
-    }
-
-    img.aboutImage {
+    a#socialMedia {
         display: none;
     }
+}
+
+/* fix logo on iphone X landscape */
+@media only screen and (device-width : 812px) and (device-height : 375px) and (-webkit-device-pixel-ratio : 3) {
+  #logo {
+      margin-top: 15%;
   }
 
-  @media screen and (max-width: 320px) {
-    body {
-      width: 320px;
-    }
+  a#socialMedia {
+      display: initial;
   }
+}
 
+/* Below is for iphone 6,7,8 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+  header {
+      height: 85vh;
+  }
+  #logo {
+      width: 50%;
+      height: 15%;
+      padding: 3%;
+      margin-top: 60%;
+      background-color: rgba(0,0,0, 0.8);
+  }
   
+  nav {
+      padding: 2%;
+      font-weight: 400;
+  }
+  
+  #navigationLink {
+      margin-left: 3%;
+  }
+  
+  .topnav {
+      border-bottom: 3px solid goldenrod;
+    }
+  
+    a {
+        margin: 1%;
+    }
+    
+    .topnav a {
+      padding: 0;
+      font-size: 50%;
+    }
+    
+    .topnav a:hover {
+      color: goldenrod;
+      text-decoration: underline solid goldenrod;
+      border: none;
+    }
+    
+    .topnav a.active {
+      border: 2px solid goldenrod;
+    }
 
+    a#socialMedia {
+        display: none;
+    }
+}
+
+/* fix logo on iphone 6/7/8 landscape */
+@media only screen and (device-width : 667px) and (device-height : 375px) and (-webkit-device-pixel-ratio : 2) {
+  #logo {
+      margin-top: 18%;
+
+  }
+
+  a#socialMedia {
+      display: initial;
+  }
+}
+
+/* Below is for iphone 6,7,8 plus */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) { 
+  header {
+      height: 85vh;
+  }
+  #logo {
+      width: 50%;
+      height: 18%;
+      padding: 3%;
+      margin-top: 63%;
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  nav {
+      padding: 3%;
+      font-weight: 600;
+  }
+  
+  #navigationLink {
+      margin-left: 9%;
+  }
+  
+    a {
+        margin: 1%;
+    }
+    
+    .topnav a {
+      padding: 1%;
+      font-size: 20%;
+    }
+    
+    .topnav a:hover {
+      border: none;
+    }
+    
+    .topnav a.active {
+      border: 2px solid goldenrod;
+    }
+}
+
+/* Below is for iphone 6/7/8 plus landscape */
+@media only screen and (device-width : 736px) and (device-height : 414px) and (-webkit-device-pixel-ratio : 3) { 
+  nav {
+      padding: 0;
+  }
+  
+  #logo {
+      margin-top: 20%;
+  }
+  a#socialMedia {
+      display: initial;
+  }
+
+  a#navigationLink {
+      margin-left: 14%;
+  }
+
+}
+
+/* Below is for iphone 5&5S */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+  header {
+      height: 85vh;
+  }
+  #logo {
+      width: 50%;
+      height: 20%;
+      padding: 3%;
+      margin-top: 60%;
+      background-color: rgba(0,0,0, 0.8);
+  }
+  
+  nav {
+      padding: 3%;
+      font-weight: 600;
+  }
+  
+  #navigationLink {
+      margin-left: 0%;
+  }
+  
+    a {
+        margin: 3px;
+    }
+    
+    .topnav a {
+      padding: 2%;
+      font-size: 14px;
+    }
+ 
+  }
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        margin-right: 3%;
+        display: block;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 3%;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      /* To Do adjust logo so that it doesnt go off the header image */
+      /* #logo {
+          margin-top: 15%;
+      } */
+}

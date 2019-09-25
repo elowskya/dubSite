@@ -1,55 +1,54 @@
 * {
     margin: 0;
     padding: 0;
+    border: 2px solid green;
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center; 
+    padding: 1%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 2%;
+    /* padding: 1%; */
 }
 
-footer div {
-   padding: 2%;
-}
-
-.footerLogo, .footerLocation, .footerHours, .footerContact {
-    width: 24%;
+.footerLocation, .footerHours, .footerContact {
+    width: 23%;
     vertical-align: top;
     display: inline-block;
     line-height: 150%;
 }
 
-footer img .footerLogo {
+footer img.footerLogo {
     padding-top: 2%;
-    width: 23%;
+    width: 25%;
+    margin: auto;
 }
 
 /* Below is for ipad in portrait and landscape */
 @media only screen 
 and (min-device-width : 768px) and (max-device-width : 1024px)  {    
-    .footerLogo, .footerLocation, .footerHours, .footerContact {
-        width: 24%;
-    }
+    /* .footerLogo, .footerLocation, .footerHours, .footerContact {
+        width: 23%;
+    } */
 }
 
 /* Below is for iphone 10 */
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
     .footerLogo {
-        width: 100%;
+        width: 98%;
         display: block;
     } 
     
     .footerLocation, .footerHours {
-        width: 100%;
+        width: 98%;
         line-height: 150%;
         display: block;
     }
 
     .footerContact {
-        width: 100%;
+        width: 98%;
         display: block;
         text-align: center;
         border-top: 2px dashed goldenrod;
@@ -68,7 +67,7 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
         vertical-align: top;
         display: inline-block;
         line-height: 150%;
-        margin-right: 12%;
+        /* margin-right: 12%; */
     }
 
     .footerContact {
