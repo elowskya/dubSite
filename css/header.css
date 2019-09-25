@@ -7,17 +7,21 @@
     /* border: 2px solid green; */
   }
   
-  button {
+  .button {
       background-color: #721817;
-      padding: 2%;
-      margin-top: 1%;
+      padding: 1%;
+      margin: 1%;
       border: 2px solid goldenrod;
       color: white;
       font-family: 'Cinzel', serif;
-      /* width: 15%; */
+      text-decoration: none;
+  }
+
+  a.button {
+      margin-top: 2%;
   }
   
-  button:hover {
+  .button:hover {
       text-decoration: underline solid goldenrod;
       color: goldenrod;
   }
@@ -26,7 +30,6 @@
       font-family: 'Cinzel Decorative', cursive;
       font-weight: 800;
       color: white;
-      text-decoration: solid underline white;
   }
   
   p {
@@ -35,15 +38,20 @@
   }
   
   h1 {
-      font-size: 60px;
+      /* font-size: 60px; */
       text-decoration: underline goldenrod;
       /* background-image: linear-gradient(to right, rgba(120,0,0,0), rgba(120,0,0,1)); */
-      background-color: rgba(120, 0, 0, 0.7)
+      background-color: rgba(120, 0, 0, 0.7);
+      font-size: 4em;
   }
   
-  h2 {
+  h2, h5 {
       color:goldenrod;
       text-decoration: none;
+  }
+
+  footer div p {
+      text-align: center;
   }
   
   header {
@@ -110,15 +118,32 @@
     }
 
 
-    /* beginning code for about section */
+    /* beginning code for about section and party section */
 
-    .about, .privateEvents {
+    .about {
         background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/dublinerBar.JPG');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         padding: 1% 6% 0 6%;
+      }
+
+      section.bookParty {
+        /* background-image: url("../images/dublininterior5.jpg"); */
+        background-color: #333;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        padding: 1%;
+        margin: 0;
+      }
+
+      .bookPartyArticle, .bookPartyImage {
+          /* width: 40%; */
+          display: inline-block;
       }
 
       .about h2 {
@@ -133,7 +158,6 @@
       .aboutContainer {
         display: flex;
     }
-    
       .aboutText {
         width: 100%;
         line-height: 225%;
@@ -190,7 +214,7 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
 
 /* /* Below is for Galaxy s5/ */
 @media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
-    a#socialMedia {
+    a.socialMedia {
         display: none;
     }
 }
@@ -236,10 +260,11 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
         border: none;
       }
 
-      a#socialMedia {
+      a.socialMedia {
           display: none;
       }
 }
+
 
 /* fix logo on iphone X landscape */
 @media only screen and (device-width : 812px) and (device-height : 375px) and (-webkit-device-pixel-ratio : 3) {
@@ -247,7 +272,7 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
         margin-top: 15%;
     }
 
-    a#socialMedia {
+    a.socialMedia {
         display: initial;
     }
  }
@@ -297,7 +322,7 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
         border: 2px solid goldenrod;
       }
 
-      a#socialMedia {
+      a.socialMedia {
           display: none;
       }
 }
@@ -309,7 +334,7 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
 
     }
 
-    a#socialMedia {
+    a.socialMedia {
         display: initial;
     }
  }
@@ -363,7 +388,7 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
     #logo {
         margin-top: 20%;
     }
-    a#socialMedia {
+    a.socialMedia {
         display: initial;
     }
 
@@ -430,6 +455,84 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
 
         /* To Do adjust logo so that it doesnt go off the header image */
         /* #logo {
-            margin-top: 15%;
+            javascript function .responsive
         } */
+}
+
+/* Below is for ipad in portrait and landscape */
+@media only screen 
+and (min-device-width : 768px) and (max-device-width : 1024px)  {    
+    /* .footerLogo, .footerLocation, .footerHours, .footerContact {
+        width: 23%;
+    } */
+}
+
+/* Below is for iphone 10 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
+   footer .footerLogo {
+        width: 98%;
+        display: block;
+    } 
+    
+    footer .footerLocation, footer .footerHours {
+        width: 98%;
+        line-height: 150%;
+        display: block;
+    }
+
+    footer .footerContact {
+        width: 98%;
+        display: block;
+        text-align: center;
+        border-top: 2px dashed goldenrod;
+    }
+}
+
+/* Below is for iphone 6,7,8 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+    .footerLogo {
+        width: 100%;
+        display: block;
+    }
+    
+    .footerLocation, .footerHours {
+        width: 100%;
+        vertical-align: top;
+        display: inline-block;
+        line-height: 150%;
+        /* margin-right: 12%; */
+    }
+
+    .footerContact {
+        width: 100%;
+        display: block;
+        text-align: center;
+        border-top: 2px dashed goldenrod;
+    }
+}
+
+/* Below is for iphone 6,7,8 plus */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) { 
+    /* content here */
+}
+
+/* Below is for iphone 5&5S */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+    .footerLogo {
+        width: 100%;
+        display: block;
+    }
+    
+    .footerLocation, .footerHours {
+        width: 100%;
+        display: block;
+        line-height: 150%;
+    }
+
+    .footerContact {
+        width: 100%;
+        display: block;
+        text-align: center;
+        border-top: 2px dashed goldenrod;
+    }
 }
