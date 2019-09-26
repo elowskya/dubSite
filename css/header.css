@@ -117,7 +117,6 @@
       display: none;
     }
 
-
     /* beginning code for about section and party section */
 
     .about {
@@ -131,7 +130,7 @@
 
       section.bookParty {
         /* background-image: url("../images/dublininterior5.jpg"); */
-        background-color: #333;
+        background-color: black;
         background-position: center;
         background-size: cover;
         width: 100%;
@@ -139,6 +138,13 @@
         /* background-attachment: fixed; */
         padding: 1%;
         margin: 0;
+      }
+
+      .bookPartyArticle p {
+          text-emphasis: left;
+          /* margin-left: 40%; */
+          margin-right: 7%;
+          padding: 1%;
       }
 
       .bookPartyArticle, .bookPartyImage {
