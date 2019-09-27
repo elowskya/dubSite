@@ -177,6 +177,25 @@
         padding: 2% 10%;
       }
 
+
+      /* code for drinks section and menu */
+
+      header.drinks {
+          background-image: url("../images/liquorBottles.jpg");
+      }
+
+      article.drinks {
+          background-color: black;
+      }
+
+      #logo {
+        background-color: rgba(0,0,0, 0.8);
+      }
+      .shamrock {
+        height: 2%;
+        width: 2%;
+        padding: 3% 1% 0;
+      }
       /* beginning code for Reservations */
       .reservations {
           padding: 3% 6%;
