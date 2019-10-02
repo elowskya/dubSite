@@ -6,6 +6,11 @@
     font-family: 'Cinzel', serif;
     /* border: 2px solid green; */
   }
+
+  body {
+      /* background-color: darkgray; */
+      margin: 0 auto;
+  }
   
   .button {
       background-color: #721817;
@@ -38,16 +43,21 @@
   }
   
   h1 {
-      font-size: 60px;
+      font-size: 350%;
       /* text-decoration: underline goldenrod; */
       /* background-image: linear-gradient(to right, rgba(120,0,0,0), rgba(120,0,0,1)); */
       background-color: rgba(120, 0, 0, 0.7);
+      margin: 0 7%;
       /* font-size: 4em; */
   }
   
   h2, h5 {
       color:goldenrod;
       text-decoration: none;
+  }
+
+  h2 {
+      padding: 2% 0;
   }
 
   footer div p {
@@ -59,8 +69,14 @@
       background-size: cover;
       background-repeat: no-repeat;
       height: 95vh;
-      width: 100%;
+      /* width: 100%; */
+      margin: 0;
+      padding: 0;
       background-position: center center;
+
+      width: auto;
+      max-width: 100%;
+      height: auto;
   }
   #logo {
       width: 60%;
@@ -76,7 +92,7 @@
       position: fixed;
       background-color:#721817;
       border-bottom: solid 3px goldenrod;
-      padding: 6px;
+      padding: 6px 0;
       font-weight: 600;
       width: 100vw;
   }
@@ -87,6 +103,7 @@
   
   .topnav {
       border-bottom: 3px solid goldenrod;
+      
     }
   
     a {
@@ -98,9 +115,9 @@
       display: block;
       color: #f2f2f2;
       text-align: center;
-      padding: 12px 12px;
+      padding: 16px 16px;
       text-decoration: none;
-      font-size: 17px;
+      font-size: 1.06em;
     }
     
     .topnav a:hover {
@@ -110,7 +127,8 @@
     }
     
     .topnav a.active {
-      border: 2px solid goldenrod;
+      /* border: 2px solid goldenrod; */
+      border: none;
     }
     
     .topnav .icon {
@@ -125,43 +143,63 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        padding: 1% 6% 0 6%;
+        /* padding: 1% 6% 0 6%; */
       }
 
       section.bookParty {
-        /* background-image: url("../images/dublininterior5.jpg"); */
         background-color: black;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        background-repeat: no-repeat;
-        /* background-attachment: fixed; */
-        padding: 1%;
         margin: 0;
       }
 
-     
+     .imageFloatLeft {
+         width: 40%;
+         float: left;
+         margin-right: 4%;
+         margin-left: 7%;
+         outline: 2px solid white;
+     }
 
-      .bookPartyArticle  {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-      }
+     .imageFloatRight {
+        width: 40%;
+        float: right;
+        margin-left: 4%;
+        margin-right: 7%;
+        outline: 2px solid white;
+    }
+
+    .floatCenter {
+        float: inline-end;
+    }
+
+   
 
       .bookPartyArticle p {
-          /* text-emphasis: left; */
-          /* margin-left: 40%; */
           margin-right: 7%;
-          padding-left: 3%;
           line-height: 150%;
       }
 
-      .bookParty h2 {
+      .sideText {
+          margin-left: 7%;
+      }
+
+      .floatRight {
+          float: right;
+      }
+
+      .floatLeft {
+          float: left;
+      }
+
+      .clearFloat {
+          clear: both;
+      }
+
+      /* .bookParty h2 {
           padding: 2%;
-      }
-      .about h2 {
+      } */
+      /* .about h2 {
           margin-bottom: 2%;
-      }
+      } */
     
       .container {
         background-color: rgba(0, 0, 0, 0.6);
@@ -175,6 +213,10 @@
         width: 100%;
         line-height: 150%;
         padding: 2% 10%;
+      }
+
+      .aboutText p {
+          text-align: center;
       }
 
 
@@ -198,12 +240,11 @@
       }
       /* beginning code for Reservations */
       .reservations {
-          padding: 3% 6%;
+          background-image: url("../images/dublinerBar.JPG");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
           background-color: black;
-      }
-
-      .reservations h2 {
-          padding: 3%;
       }
 
       .reservations p {
@@ -215,7 +256,7 @@
         background-color: black;
         color: white;
         text-align: center; 
-        padding: 1%;
+        padding: 1% 0;
         font-family: Georgia, 'Times New Roman', Times, serif;
         /* padding: 1%; */
     }
@@ -271,8 +312,10 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
 
 /* Below is for iphone 10 */
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
-    header {
-        height: 85vh;
+    .header {
+        /* height: 85vh; */
+        /* width: 375px;
+        height: 20%; */
     }
     #logo {
         width: 50%;
@@ -280,6 +323,10 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
         padding: 3%;
         margin-top: 80%;
         background-color: rgba(0,0,0, 0.8);
+    }
+
+    h1 {
+        font-size: 30px;
     }
 
     .footerLogo {
@@ -299,14 +346,9 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
       }
       
       .topnav a {
-        padding: 1%;
+        /* padding: 1%; */
         text-decoration: none;
         font-size: 50%;
-      }
-      
-      .topnav a:hover {
-        color: goldenrod;
-        border: none;
       }
 
       a.socialMedia {
@@ -318,11 +360,11 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
       }
 
       .bookPartyImage {
-          width: 95%;
+          width: 100%;
       }
 
       .bookPartyArticle p {
-          width: 95%;
+          width: 100%;
       }
 }
 
@@ -352,13 +394,13 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
     }
     
     nav {
-        padding: 2%;
+        /* padding: 2%; */
         font-weight: 400;
     }
     
-    #navigationLink {
+    /* #navigationLink {
         margin-left: 3%;
-    }
+    } */
     
     .topnav {
         border-bottom: 3px solid goldenrod;
@@ -373,14 +415,9 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
         font-size: 50%;
       }
       
-      .topnav a:hover {
-        color: goldenrod;
-        text-decoration: underline solid goldenrod;
-        border: none;
-      }
-      
       .topnav a.active {
-        border: 2px solid goldenrod;
+        /* border: 2px solid goldenrod; */
+        color: goldenrod;
       }
 
       a.socialMedia {
@@ -392,11 +429,11 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
     }
 
     .bookPartyImage {
-        width: 95%;
+        width: 100%;
     }
 
     .bookPartyArticle p {
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -426,7 +463,7 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
     }
     
     nav {
-        padding: 3%;
+        /* padding: 3%; */
         font-weight: 600;
     }
     
@@ -439,16 +476,13 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
       }
       
       .topnav a {
-        padding: 1%;
+        /* padding: 1%; */
         font-size: 20%;
       }
       
-      .topnav a:hover {
-        border: none;
-      }
-      
       .topnav a.active {
-        border: 2px solid goldenrod;
+        /* border: 2px solid goldenrod; */
+        color: goldenrod;
       }
 
       .bookPartyArticle {
@@ -456,11 +490,11 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
     }
 
     .bookPartyImage {
-        width: 95%;
+        width: 100%;
     }
 
     .bookPartyArticle p {
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -497,7 +531,7 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
     }
     
     nav {
-        padding: 3%;
+        /* padding: 3%; */
         font-weight: 600;
     }
     
@@ -510,7 +544,7 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
       }
       
       .topnav a {
-        padding: 2%;
+        /* padding: 2%; */
         font-size: 14px;
       }
 
@@ -519,11 +553,11 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
     }
 
     .bookPartyImage {
-        width: 95%;
+        width: 100%;
     }
 
     .bookPartyArticle p {
-        width: 95%;
+        width: 100%;
     }
    
     }
@@ -531,9 +565,15 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
         .topnav a:not(:first-child) {display: none;}
         .topnav a.icon {
           float: right;
-          margin-right: 3%;
+          margin-top: 2%;
+          margin-right: 8%;
+          padding: 0;
           display: block;
         }
+
+        /* #logo {
+            display: none;
+        } */
       }
       
       @media screen and (max-width: 600px) {
@@ -542,7 +582,8 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
           position: absolute;
           right: 0;
           top: 0;
-          margin-right: 3%;
+          margin-top: 3%;
+          margin-right: 8%;
         }
         .topnav.responsive a {
           float: none;
@@ -567,7 +608,7 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
 /* Below is for iphone 10 */
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
    footer .footerLogo {
-        width: 98%;
+        width: 100%;
         display: block;
     } 
     
@@ -578,10 +619,10 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
     }
 
     footer .footerContact {
-        width: 98%;
+        width: 100%;
         display: block;
         text-align: center;
-        border-top: 2px dashed goldenrod;
+        /* border-top: 2px dashed goldenrod; */
     }
 }
 
@@ -604,7 +645,7 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
         width: 100%;
         display: block;
         text-align: center;
-        border-top: 2px dashed goldenrod;
+        /* border-top: 2px dashed goldenrod; */
     }
 }
 
@@ -630,6 +671,6 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
         width: 100%;
         display: block;
         text-align: center;
-        border-top: 2px dashed goldenrod;
+        /* border-top: 2px dashed goldenrod; */
     }
 }
