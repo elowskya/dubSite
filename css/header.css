@@ -9,6 +9,7 @@
 
   body {
       margin: 0 auto;
+
   }
   
   .button {
@@ -227,6 +228,30 @@
       }
       /* code for drinks section and menu */
 
+      header.menu {
+          background-image: url("../images/dublininterior5.jpg");
+      } 
+
+    .mainMenu {
+        margin: 0 7%;
+    }
+
+    .mainMenu h3 {
+        color: black;
+        text-align: left;
+        margin: 2% 0 1%;
+    }
+
+      ul.appetizers li {
+          text-align: left;
+          list-style: none;
+      }
+
+      ul.appetizers li.title {
+          font-weight: 600;
+      }
+
+
       header.drinks {
           background-image: url("../images/liquorBottles.jpg");
       }
@@ -316,11 +341,6 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
 
 /* Below is for iphone 10 */
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
-    .header {
-        /* height: 85vh; */
-        /* width: 375px;
-        height: 20%; */
-    }
     #logo {
         width: 50%;
         height: 20%;
