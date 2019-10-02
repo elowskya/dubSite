@@ -8,7 +8,6 @@
   }
 
   body {
-      /* background-color: darkgray; */
       margin: 0 auto;
   }
   
@@ -78,14 +77,30 @@
       max-width: 100%;
       height: auto;
   }
+
+  .aboutHeader {
+      background-image: url("../images/ireland.jpg");
+  }
+
+  pre {
+    color: white;
+    text-align: left;
+    border-bottom: 2px dashed goldenrod;
+  }
+  
+  .aboutText .aboutHistory {
+    line-height: 150%;
+    text-align: left;
+    margin: 3% 0;
+  }
   #logo {
       width: 60%;
       height: 37%;
       padding: 3%;
       margin-top: 17%;
       /* background-color: rgba(120, 0, 0, 0.8); */
-      background-color: rgba(33,33,33, 0.8);
-      /* background-color: rgba(0, 0, 0, 0.8); */
+      /* background-color: rgba(33,33,33, 0.8); */
+      background-color: rgba(0, 0, 0, 0.8);
   }
   
   nav {
@@ -143,7 +158,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        /* padding: 1% 6% 0 6%; */
       }
 
       section.bookParty {
@@ -193,13 +207,6 @@
       .clearFloat {
           clear: both;
       }
-
-      /* .bookParty h2 {
-          padding: 2%;
-      } */
-      /* .about h2 {
-          margin-bottom: 2%;
-      } */
     
       .container {
         background-color: rgba(0, 0, 0, 0.6);
@@ -218,8 +225,6 @@
       .aboutText p {
           text-align: center;
       }
-
-
       /* code for drinks section and menu */
 
       header.drinks {
@@ -258,7 +263,6 @@
         text-align: center; 
         padding: 1% 0;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        /* padding: 1%; */
     }
     
     .footerLocation, .footerHours, .footerContact {
@@ -286,7 +290,7 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
         height: 20%;
         padding: 3%;
         margin-top: 48%;
-        background-color: rgba(25,25,25, 0.8);
+        /* background-color: rgba(25,25,25, 0.8); */
     }
     
     #navigationLink {
@@ -394,13 +398,8 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
     }
     
     nav {
-        /* padding: 2%; */
         font-weight: 400;
     }
-    
-    /* #navigationLink {
-        margin-left: 3%;
-    } */
     
     .topnav {
         border-bottom: 3px solid goldenrod;
@@ -463,7 +462,6 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
     }
     
     nav {
-        /* padding: 3%; */
         font-weight: 600;
     }
     
@@ -476,7 +474,6 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
       }
       
       .topnav a {
-        /* padding: 1%; */
         font-size: 20%;
       }
       
@@ -531,7 +528,6 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
     }
     
     nav {
-        /* padding: 3%; */
         font-weight: 600;
     }
     
@@ -544,7 +540,6 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
       }
       
       .topnav a {
-        /* padding: 2%; */
         font-size: 14px;
       }
 
