@@ -458,6 +458,10 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
       .bookPartyArticle p {
           width: 100%;
       }
+
+    .imgFooterLogo, div.footerLocation, div.footerHours, div.footerContact {
+        width: 100%;
+    } 
 }
 
 /* fix logo on iphone X landscape */
@@ -501,7 +505,6 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
       }
       
       .topnav a.active {
-        /* border: 2px solid goldenrod; */
         color: goldenrod;
       }
 
@@ -580,11 +583,9 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
       .bookPartyArticle {
         display: block;
     }
-
     .bookPartyImage {
         width: 100%;
     }
-
     .bookPartyArticle p {
         width: 100%;
     }
@@ -592,39 +593,36 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
     h1 {
         font-size: 150%;
     }
-
     h2 {
         font-size: 100%;
     }
-
     .paddingInsideMobile {
         padding: 2% 4%;
     }
-
     a .button {
         float: none;
     }
-
     .bookPartyArticle img {
         float: none;
         width: 90%;
         margin: 3% auto;
-        /* margin-bottom: 3%; */
     }
-
     p.sideText {
         margin: 0;
     }
-
     .bookPartyArticle .button {
         float: none;
         margin: 25%;
     }
-
     .marginBottom {
         margin-bottom: 5%;
     }
 /* end here */
+
+/* footer for 6/7/8 */
+    img.footerLogo, .footerLocation, .footerHours, .footerContact {
+        width: 100%;
+    }
 }
 
 /* fix logo on iphone 6/7/8 landscape */
@@ -701,11 +699,16 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
         float: none;
     }
 
+    a.button.floatRight {
+        float: none;  
+        margin: 0 auto;
+        margin-left: 10%;
+    }
+
     .bookPartyArticle img {
         float: none;
-        width: 90%;
+        width: 100%;
         margin: 3% auto;
-        /* margin-bottom: 3%; */
     }
 
     p.sideText {
@@ -721,6 +724,9 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
         margin-bottom: 5%;
     }
     /* end here  */
+    img.footerLogo, .footerLocation, .footerHours, .footerContact {
+        width: 100%;
+    }
     }
 
     @media screen and (max-width: 600px) {
@@ -759,81 +765,9 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
             margin-top: 30%;
         }
     /* end fix logo on landscape of iphone5 */
+    }
+
+  
+
+
     
-    /* Below is for ipad in portrait and landscape */
-    @media only screen 
-    and (min-device-width : 768px) and (max-device-width : 1024px)  {    
-        /* .footerLogo, .footerLocation, .footerHours, .footerContact {
-            width: 23%;
-    } */
-}
-
-/* Below is for iphone 10 */
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
-   footer .footerLogo {
-        width: 100%;
-        display: block;
-    } 
-    
-    footer .footerLocation, footer .footerHours {
-        width: 98%;
-        line-height: 150%;
-        display: block;
-    }
-
-    footer .footerContact {
-        width: 100%;
-        display: block;
-        text-align: center;
-        /* border-top: 2px dashed goldenrod; */
-    }
-}
-
-/* Below is for iphone 6,7,8 */
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
-    .footerLogo {
-        width: 100%;
-        display: block;
-    }
-    
-    .footerLocation, .footerHours {
-        width: 100%;
-        vertical-align: top;
-        display: inline-block;
-        line-height: 150%;
-        /* margin-right: 12%; */
-    }
-
-    .footerContact {
-        width: 100%;
-        display: block;
-        text-align: center;
-        /* border-top: 2px dashed goldenrod; */
-    }
-}
-
-/* Below is for iphone 6,7,8 plus */
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) { 
-    /* content here */
-}
-
-/* Below is for iphone 5&5S */
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
-    .footerLogo {
-        width: 100%;
-        display: block;
-    }
-    
-    .footerLocation, .footerHours {
-        width: 100%;
-        display: block;
-        line-height: 150%;
-    }
-
-    .footerContact {
-        width: 100%;
-        display: block;
-        text-align: center;
-        /* border-top: 2px dashed goldenrod; */
-    }
-}
