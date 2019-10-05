@@ -7,7 +7,8 @@
     /* font-family: 'Cinzel Decorative', cursive; */
     font-family: 'Cinzel', serif;
     /* border: 2px solid green; */
-  }
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
 
   .aboutText p a {
       color: goldenrod;
@@ -261,7 +262,10 @@
       } 
 
     .mainMenu {
-        margin: 0 7%;
+        margin: 0 5%;
+        background-color: #FFE68E;
+        /* background-color: #FFEEB2;
+        background-color: #FFECA8; */
     }
 
     .mainMenu h3 {
