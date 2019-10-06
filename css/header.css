@@ -66,6 +66,7 @@
   p {
       color: white;
       text-align: justify;
+      font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   h1 {
@@ -234,18 +235,24 @@
           float: left;
       }
 
+        /* floats left to create menu */
+      .column {
+          float: left;
+          width: 50%;
+      }
+
       .clearFloat {
           clear: both;
       }
     
       .container {
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.2);
         padding: 0 3% 1% 3%;
       }
     
-      .aboutContainer {
+      /* .aboutContainer {
         display: flex;
-    }
+    } */
       .aboutText {
         width: 100%;
         line-height: 150%;
