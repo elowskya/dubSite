@@ -133,9 +133,12 @@ hr.dottedLine {
   .aboutHeader {
       background-image: url("../images/ireland.jpg");
   }
+  header.events {
+      background-image: url("../images/sports.jpg");
+  }
 
   header.privateEvents {
-      background-image: url("../images/dublininterior3.jpg");
+      background-image: url("../images/dublininterior.jpg");
   }
 
   .privateEventsText {
