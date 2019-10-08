@@ -62,14 +62,14 @@
       />
       <a href="#">Liquors</a>
       <h4>House recipes & Irish Classics</h4>
-    </article>
+    </article> 
 
     <article class="mainMenu">
       <!-- left top half of menu -->
-      <article class="column">
+      <article class="appetizer column">
         <h3>Appetizers</h3>
         <hr />
-        <ul class="appetizers">
+        <ul>
           <li class="title">SCOTCH EGGS</li>
           <li class="description">
             Deep fried, hard-boiled local farm fresh free-range eggs wrapped in
@@ -114,7 +114,7 @@
       </article>
 
       <!-- float right top half of menu -->
-      <article class="entrees">
+      <article class="entrees column">
         <ul class="dottedBox">
           <li class="title">FISH & CHIPS</li>
           <li class="description">
@@ -129,7 +129,7 @@
         </ul>
         <h3>BURGERS</h3>
         <hr />
-        <h4>SERVED WITH HOUSE FRIES</h4>
+        <h4>SERVED WITH HOUSE FRIES.</h4>
         <ul>
           <li class="title">JUMBO DUBLIN BURGER</li>
           <li class="description">
@@ -158,24 +158,32 @@
             A slice of creamy cheesecake with carmelized sugar & garnished with
             raspberry whiskey sauce.
           </li>
-          <li class="title rowLeft">APERITIFS</li>
-          <li class="description rowTwo">Campari</li>
-          <li class="description rowTwo">Pimm's</li>
-          <li class="title rowLeft">SHERRY</li>
-          <li class="description rowTwo">Dry Sack</li>
-          <li class="description rowTwo">Harvey Bristol</li>
-          <li class="title rowRight">DIGESTIFS</li>
-          <li class="description rowTwo">Fernet-Branca</li>
-          <li class="description rowTwo">Remy VSOP</li>
+        </ul>
+        <ul class="floatLeft smallColumn">
+          <li class="title">APERITIFS</li>
+          <li class="description">Campari</li>
+          <li class="description">Pimm's</li>
+          <li class="title">SHERRY</li>
+          <li class="description">Dry Sack</li>
+          <li class="description">Harvey Bristol</li>
+        </ul>
+        <ul class="floatLeft smallColumn">
+          <li class="title">DIGESTIFS</li>
+          <li class="description">Fernet-Branca</li>
+          <li class="description">Remy VSOP</li>
+          <li class="title">COGNACS</li>
+          <li class="description">Hennessey VS</li>
+          <li class="description">Remy VSOP</li>
         </ul>
       </article>
+      <div class="clearFloat">&nbsp;</div>
 
-      <!-- beginning of bottom full menu about 25% of vh -->
-      <hr class="dottedLine" />
-      <article class="brunch">
-        <h3>Brunch</h3>
+
+      <!-- <hr class="dottedLine" /> -->
+      <article class="brunchMenu">
+        <h3 id="brunchMenuH3">Brunch</h3>
         <h4>SUNDAY 9AM - 2PM</h4>
-        <ul>
+        <ul class="column">
           <li class="title">PANCAKE STACK</li>
           <li class="description">
             Homemade buttermilk
@@ -189,6 +197,8 @@
             Two poached eggs, Irish bacon & English muffins topped with
             hollandaise. Served with potatoes O'Brien.
           </li>
+        </ul>
+        <ul class="column">
           <li class="title">KERRYGOLD OMELET</li>
           <li class="description">
             Three eggs, bacon, diced tomatoes, caramelized onions & cheddar
@@ -205,8 +215,11 @@
             Strawberry-Grapefruit, Raspberry-Lemonade, Peach or Classic Orange.
           </li>
         </ul>
+        <div class="clearFloat"></div>
       </article>
     </article>
+
+    <div class="clearFloat">&nbsp;</div>
     <footer>
       <img
         class="footerLogo"

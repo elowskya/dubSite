@@ -88,6 +88,30 @@
       padding: 2% 0;
   }
 
+  hr {
+    border:none;
+    border-top:1px dashed black;
+    color: black;
+    background-color: black;
+    height:1%;
+    /* width:50%; */
+  }
+
+  .dottedBox {
+      border: 2px dotted black;
+      padding: 2% 2% 1%;
+      margin: 2% 0;
+  }
+
+hr.dottedLine {
+    border:none;
+    border-top:1px dotted black;
+    color: black;
+    /* background-color: black; */
+    height:1%;
+
+  }
+
   footer div p {
       text-align: center;
   }
@@ -238,11 +262,19 @@
         /* floats left to create menu */
       .column {
           float: left;
-          width: 50%;
+          width: 46%;
       }
 
       .clearFloat {
           clear: both;
+      }
+
+      .appetizer {
+          padding: 2%;
+      }
+
+      .entrees {
+          padding: 2%;
       }
     
       .container {
@@ -265,20 +297,47 @@
       /* code for drinks section and menu */
 
       header.menu {
-          background-image: url("../images/dublininterior5.jpg");
+          background-image: url("../images/foodTable.jpg");
       } 
 
     .mainMenu {
+        
         margin: 0 5%;
-        background-color: #FFE68E;
+        /* background-color: #FFE68E; */
         /* background-color: #FFEEB2;
         background-color: #FFECA8; */
+        background-color: white;
     }
 
+    .brunchMenu {
+        /* background-color: #FFE68E; */
+        border-top: 2px dotted black;
+    }
+
+    
     .mainMenu h3 {
         color: black;
         text-align: left;
-        margin: 2% 0 1%;
+        margin: 1% 0;
+    }
+    
+    .brunchMenu h4, .entrees h4 {
+        color: black;
+        margin: 1% 0;
+    }
+
+    .entrees h4 {
+        text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+    }
+    #brunchMenuH3 {
+    text-align: center;
+    color: black;
+    }
+
+    .smallColumn {
+        width: 50%;
     }
 
       .title {
@@ -290,6 +349,7 @@
       .description {
           text-align: left;
           list-style: none;
+          margin-bottom: 2%;
       }
 
 
@@ -299,6 +359,10 @@
 
       article.drinks {
           background-color: black;
+      }
+
+      article li {
+          font-family: Georgia, 'Times New Roman', Times, serif;
       }
 
       #logo {
@@ -333,6 +397,16 @@
 
     .footer p {
         margin: 0;
+    }
+
+    footer p a {
+        color: goldenrod;
+        text-decoration: none;
+    }
+
+    footer p a:hover {
+        color: goldenrod;
+        text-decoration: underline;
     }
     
     .footerLocation, .footerHours, .footerContact {
