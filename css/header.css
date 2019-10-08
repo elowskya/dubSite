@@ -134,6 +134,14 @@ hr.dottedLine {
       background-image: url("../images/ireland.jpg");
   }
 
+  header.privateEvents {
+      background-image: url("../images/dublininterior3.jpg");
+  }
+
+  .privateEventsText {
+      margin: 0 7%;
+  }
+
   pre {
     color: white;
     text-align: left;
@@ -149,7 +157,7 @@ hr.dottedLine {
   #logo {
       width: 60%;
       height: 37%;
-      padding: 1%;
+      padding: 3%;
       margin-top: 17%;
       /* background-color: rgba(120, 0, 0, 0.8); */
       /* background-color: rgba(33,33,33, 0.8); */
@@ -235,12 +243,18 @@ hr.dottedLine {
         outline: 2px solid white;
     }
 
+    .privateEventImage {
+        width: 45%;
+         float: left;
+         margin: 0 2% 2%;
+         /* margin-right: 4%;
+         margin-left: 7%; */
+         outline: 2px solid white;
+    }
+
     .floatCenter {
         float: inline-end;
     }
-
-   
-
       .bookPartyArticle p {
           margin-right: 7%;
           line-height: 150%;
