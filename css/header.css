@@ -507,6 +507,11 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
         width: 90%;
         margin: 3% auto;
     }
+    .privateEventImage {
+        width: 96%;
+        padding: 0;
+        margin: 2%;
+    }
 
     p.sideText {
         margin: 0;
@@ -689,6 +694,11 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
     .bookPartyImage {
         width: 100%;
     }
+
+    .privateEventImage {
+        width: 96%;
+        margin: 2%;
+    }
     .bookPartyArticle p {
         width: 100%;
     }
@@ -778,6 +788,11 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
 
     .bookPartyImage {
         width: 100%;
+    }
+
+    .privateEventImage {
+        width: 96%;
+        margin: 2%;
     }
 
     .bookPartyArticle p {
