@@ -90,11 +90,10 @@
 
   hr {
     border:none;
-    border-top:1px dashed black;
+    border-top:2px dashed black;
     color: black;
     background-color: black;
-    height:1%;
-    /* width:50%; */
+    height:4%;
   }
 
   .dottedBox {
@@ -317,6 +316,7 @@ hr.dottedLine {
     
     .mainMenu h3 {
         color: black;
+        font-size: 150%;
         text-align: left;
         margin: 1% 0;
     }
@@ -501,6 +501,9 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
 
     .marginBottom {
         margin-bottom: 5%;
+    }
+    .column {
+        width: 100%;
     }
 
     .footerLogo {
@@ -699,6 +702,10 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
     .marginBottom {
         margin-bottom: 5%;
     }
+
+    .column {
+        width: 100%;
+    }
 /* end here */
 
 /* footer for 6/7/8 */
@@ -804,6 +811,10 @@ and (min-device-width : 768px) and (max-device-width : 1024px)  {
 
     .marginBottom {
         margin-bottom: 5%;
+    }
+
+    .column {
+        width: 100%;
     }
     /* end here  */
     img.footerLogo, .footerLocation, .footerHours, .footerContact {
