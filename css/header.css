@@ -10,13 +10,13 @@
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 
-  .aboutText p a {
+  .aboutText p a, .reservations p a {
       color: goldenrod;
       text-decoration: none;
       border: none;
   }
 
-  .aboutText p a:hover {
+  .aboutText p a:hover, .reservations p a:hover {
       /* color: #721817; */
       text-decoration-line: underline;
       text-decoration-color: goldenrod;
@@ -149,7 +149,7 @@ hr.dottedLine {
   #logo {
       width: 60%;
       height: 37%;
-      padding: 3%;
+      padding: 1%;
       margin-top: 17%;
       /* background-color: rgba(120, 0, 0, 0.8); */
       /* background-color: rgba(33,33,33, 0.8); */
@@ -374,11 +374,15 @@ hr.dottedLine {
         padding: 3% 1% 0;
       }
       /* beginning code for Reservations */
-      .reservations {
-          background-image: url("../images/dublinerBar.JPG");
+      .reservation {
+          background-image: url("../images/contact.jpg");
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
+          background-color: black;
+      }
+
+      .reservations {
           background-color: black;
       }
 
