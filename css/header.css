@@ -185,7 +185,7 @@ hr.dottedLine {
         border: 2px solid #721817;
     }
 
-    article.drinks a {
+    aside.drinks a {
         border: none;
         color: goldenrod;
         text-decoration: none;
@@ -329,7 +329,9 @@ hr.dottedLine {
         /* background-color: #FFE68E; */
         border-top: 2px dotted black;
     }
-
+    .mainMenuH1 {
+        background-color: #721817;
+    }
     
     .mainMenu h3 {
         color: black;
@@ -374,7 +376,7 @@ hr.dottedLine {
           background-image: url("../images/liquorBottles.jpg");
       }
 
-      article.drinks {
+      aside.drinks {
           background-color: black;
       }
 
