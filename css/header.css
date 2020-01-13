@@ -397,7 +397,7 @@ hr.dottedLine {
 
       /* beginning code for contact */
       .contact {
-          background-image: url("../images/dublininterior5.jpg");
+          background-image: url("../images/contact.jpg");
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
@@ -405,7 +405,7 @@ hr.dottedLine {
       }
       /* beginning code for Reservations */
       .reservation {
-          background-image: url("../images/contact.jpg");
+          background-image: url("../images/dublininterior5.jpg");
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
