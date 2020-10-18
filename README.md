@@ -1,5 +1,5 @@
 <h1>Sample 10 page website</h1>
-<img src="images/dublinerScreenGrab.PNG">
+<img src="images/restaurant-site.JPG">
 
 <h2>DESCRIPTION</h2>
 <p>A sample 10+ page website featuring:</p>
@@ -24,4 +24,4 @@
 </ul>
 
 <h3>VIEW DEMO SITE:</h3>
-<a href="https://elowskya.github.io/dubSite/index.html">https://elowskya.github.io/dubSite/index.html</a>
+<a href="https://elowskya.github.io/dubSite/pages/drinks.html">https://elowskya.github.io/dubSite/pages/drinks.html</a>
