@@ -70,11 +70,14 @@
       font-size: 350%;
       background-color: rgba(120, 0, 0, 0.7);
       margin: 0;
+      text-shadow: 1px 1px 0 #000;
   }
   
   h2, h5 {
-      color:goldenrod;
+      color: rgb(228, 161, 16);
       text-decoration: none;
+      font-size: larger;
+      text-shadow: 1px 1px 0 #000;
   }
 
   h2 {
